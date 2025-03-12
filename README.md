@@ -1,2 +1,2 @@
 # Electonic
-a tool for optoelectronic joint simulation
+a tool for Optoelectronic joint simulation
