@@ -26,7 +26,8 @@ def main():
         ast, directives = parser.parse_files(file_path)
         ast.show(buf=f)
 
-
+        # 删除生成的paser.out和pasetab.py文件
+        subprocess.run(["rm", "-f", "parser.out", "parsetab.py"])
     # 步骤2：解析 AST 文本为 JSON
     with open(ast_txt_file, "r") as f:
         ast_text = f.read()
