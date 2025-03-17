@@ -1,0 +1,33 @@
+{
+    "module": "m1",
+    "ports": {
+        "input": [
+            "A",
+            "B"
+        ],
+        "output": [
+            "S1",
+            "S2"
+        ]
+    },
+    "assignments": [
+        {
+            "output": "S1",
+            "operation": "and",
+            "operands": [
+                "A",
+                "B"
+            ],
+            "is_linear": false
+        },
+        {
+            "output": "S2",
+            "operation": "add",
+            "operands": [
+                "A",
+                "B"
+            ],
+            "is_linear": true
+        }
+    ]
+}
