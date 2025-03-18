@@ -24,8 +24,17 @@
             "output": "S2",
             "operation": "add",
             "operands": [
-                "A",
-                "B"
+                {
+                    "temp_var": "_temp0",
+                    "operation": "add",
+                    "operands": [
+                        "A",
+                        "B",
+                        "A"
+                    ],
+                    "is_linear": true
+                },
+                "A"
             ],
             "is_linear": true
         }
